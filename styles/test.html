@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Nav Bar</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .nav-bar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #333;
+      color: white;
+      transition: left 0.3s;
+      overflow-y: auto;
+      z-index: 1000;
+      display: none;
+      /* Hide by default on small screens */
+    }
+
+    .nav-bar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-bar ul li {
+      padding: 15px;
+    }
+
+    .nav-bar ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-bar .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .content {
+      padding: 20px;
+      transition: margin-left 0.3s;
+    }
+
+    .open-btn {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .nav-bar {
+        display: block;
+      }
+
+      .open-btn {
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .content {
+        margin-left: 0;
+        /* No shift on small screens */
+      }
+    }
+
+    @media (min-width: 769px) {
+      .nav-bar {
+        left: 0;
+        /* Always visible on larger screens */
+        display: block;
+        /* Make sure it's visible on large screens */
+      }
+
+      .content {
+        margin-left: 250px;
+        /* Shift content to make space for nav bar */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav-bar" id="navBar">
+    <button class="close-btn" id="closeBtn">&times;</button>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div class="content" id="content">
+    <button class="open-btn" id="openBtn">☰ Open Nav</button>
+    <h1>Welcome to My Website</h1>
+    <p>This is the main content area.</p>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navBar = document.getElementById('navBar');
+      const openBtn = document.getElementById('openBtn');
+      const closeBtn = document.getElementById('closeBtn');
+
+      openBtn.addEventListener('click', function () {
+        navBar.style.left = '0';
+        navBar.style.display = 'block'; // Ensure nav bar is visible
+      });
+
+      closeBtn.addEventListener('click', function () {
+        navBar.style.left = '-250px';
+        navBar.style.display = 'none'; // Hide nav bar when closed
+      });
+    });
+
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

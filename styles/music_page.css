@@ -1,0 +1,143 @@
+.music_page_hero {
+  background: #111;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: deepskyblue;
+}
+
+.music_page_hero h1 {
+  font-size: 15rem;
+  text-transform: uppercase;
+  color: transparent;
+  width: 100%;
+  background: url(../assets/ayrann.png);
+  background-color: darkcyan;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  line-height: 0.9;
+  text-wrap: wrap;
+  width: min-content;
+  word-wrap: break-word;
+  background-size: contain;
+  backdrop-filter: blur(10px);
+  background-clip: text;
+}
+
+.music-list button {
+  padding: 0.5rem 1rem;
+  background: var(--secondary-bg);
+  color: gray;
+  font-size: large;
+  margin: 0.5rem 0;
+}
+
+.music-list .active {
+  color: var(--active-color);
+  background: var(--primary-bg);
+}
+
+.music-list button:hover {
+  color: var(--color-white);
+  background: var(--primary-bg);
+}
+
+.music-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem 0.5rem;
+  padding: 2rem 0;
+}
+
+.music-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.music-container iframe {
+  width: 100%;
+  /* height: 200px */
+}
+
+.music-title-artist {
+  padding: 0.5rem 0;
+}
+
+.music-title-artist .music-artist {
+  /* background: red; */
+  /* font-weight: bold; */
+  font-size: large;
+}
+
+.music-title-artist .music-title {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.music-container button {
+  background: black;
+  padding: 1rem;
+  font-size: large;
+  /* font-weight: bold; */
+}
+
+.music-container button a {
+  color: white;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+  .music_page_hero {
+    /* height: 50vh; */
+    /* padding: 5rem 2rem; */
+  }
+
+  .music_page_hero h1 {
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: transparent;
+    width: 100%;
+    background: url(../assets/ayrann.png);
+    background-color: darkcyan;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 0.9;
+    text-wrap: wrap;
+    width: min-content;
+    word-wrap: break-word;
+    background-size: contain;
+    backdrop-filter: blur(10px);
+    background-clip: text;
+  }
+
+  .music-list {
+    margin-top: 20rem;
+  }
+}
+
+@media screen and (max-width:600px) {
+  /* Mobile */
+
+  .music_page_hero h1 {
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: transparent;
+    width: 100%;
+    background: url(../assets/ayrann.png);
+    background-color: darkcyan;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 0.9;
+    text-wrap: wrap;
+    width: min-content;
+    word-wrap: break-word;
+    background-size: contain;
+    backdrop-filter: blur(10px);
+    background-clip: text;
+  }
+}
