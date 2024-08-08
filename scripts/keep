@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official website of AYRAN. Discover music, photos, videos, and more.">
+  <meta name="keywords" content="AYRAN, Musician, Singer, Afrobeats, R&B, Afropop, Drill">
+  <title>AYRAN - Official Website</title>
+  <link rel="shortcut icon" href="assets/ayran.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/music_page.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <nav class="side-panel">
+    <div class="logo">
+      <img src="assets/ayrann.png" alt="Ayran photo">
+      <h1>AYRAN</h1>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#music" class="active">Music</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#merch">Merch</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="close-menu-btn"><i class="bx bx-x">X</i></button>
+  </nav>
+
+  <main class="main" id="main">
+    <section id="home">
+      <div class="bg-filter">
+        <header>
+          <button id="open-menu-btn"><i class="bx bx-menu">=</i></button>
+        </header>
+        <div class="slider-container music_page_hero">
+          <h1>Ayrann Music</h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="container music-list">
+      <h2>Ayran's Music</h2>
+      <div class="music-filter-container">
+        <button class="all">All</button>
+        <button class="video">Video</button>
+        <button class="audio">Audio</button>
+        <button class="audio">Remix</button>
+        <button class="audio">Album</button>
+      </div>
+
+      <div class="music-container">
+        <div class="music-box">
+          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="music-title-artist">
+            <p class="music-artist">Ayran</p>
+            <p class="music-title">Drill</p>
+          </div>
+          <button><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Listen now</a></button>
+        </div>
+    
+        <div class="music-box">
+          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="music-title-artist">
+            <p class="music-artist">Ayran</p>
+            <p class="music-title">Drill</p>
+          </div>
+          <button><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Listen now</a></button>
+        </div>
+    
+        <div class="music-box">
+          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="music-title-artist">
+            <p class="music-artist">Ayran</p>
+            <p class="music-title">Drill</p>
+          </div>
+          <button><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Listen now</a></button>
+        </div>
+    
+        <div class="music-box">
+          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="music-title-artist">
+            <p class="music-artist">Ayran</p>
+            <p class="music-title">Drill</p>
+          </div>
+          <button><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Listen now</a></button>
+        </div>
+    
+        <div class="music-box">
+          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="music-title-artist">
+            <p class="music-artist">Ayran</p>
+            <p class="music-title">Drill</p>
+          </div>
+          <button><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Listen now</a></button>
+        </div>
+    
+        <div class="music-box">
+          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="music-title-artist">
+            <p class="music-artist">Ayran</p>
+            <p class="music-title">Drill</p>
+          </div>
+          <button><a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Listen now</a></button>
+        </div>
+        <!-- Repeat music-box for other songs -->
+      </div>
+    </div>
+
+    <footer>
+      <div class="container subscribe" id="subscribe">
+        <h4>Sign up for the mailing list</h4>
+        <div class="email-box">
+          <input type="email" name="email" id="email" placeholder="EMAIL">
+          <button type="submit">Subscribe</button>
+        </div>
+        <p>I agree to receive personalized updates and marketing messages based on my information, interests,
+          activities, website visits, and device data. For more information about how we use your personal information,
+          please see our <a href="#">Privacy Policy.</a></p>
+      </div>
+
+      <div class="footer-container">
+        <div class="footer1">
+          <div class="logo">
+            <h1>AYRAN</h1>
+          </div>
+          <div class="social-links">
+            <a href="https://www.youtube.com/@Ayran_d_wonderboi" target="_blank">YouTube</a>
+            <a href="https://www.tiktok.com/@theyluv_ayran" target="_blank">TikTok</a>
+            <a href="https://www.instagram.com/th3yluv_ayran" target="_blank">Instagram</a>
+          </div>
+        </div>
+
+        <div class="footer2" id="contact">
+          <h2>Contact</h2>
+          <form id="form">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <textarea id="message" name="message" placeholder="Start typing..." required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2024 AYRAN. All rights reserved.</p>
+    </footer>
+  </main>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
